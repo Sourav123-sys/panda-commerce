@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navigation Bar Custom Styles  */
+header {
+    padding-top: 20px;
+    background-color: white;
+}
+.navbar{
+    background-color: white;
+}
+.nav-container {
+    padding-top: 5px;
+}
+.navbar-brand {
+    width: 130px;
+}
+input[type=search] {
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #F1F1F1 !important;
+    padding-left: 20px;
+} 
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #707070;
+    text-align: center;
+}
+.search {
+    width: 100%;
+}
+.search input::placeholder {
+    color: #CCCCCC;
+}
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}   
+.nav-link::after {
+    content: '';
+	width: 0%;
+	height: 3px;
+	background-color: orangered;
+	display: block;
+	margin: auto;
+}
+.nav-item :hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+.navbar-toggler-icon {
+    font-size: 15px;
+}
+
+/* Carousel Custom Styles  */
+.carousel-container {
+    margin-bottom: 65px;
+    margin-top: 100px;
+}
+.carousel {
+    background-color: #FEEAE9;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+.item-text {
+    width: 40%;
+}
+.item-img {
+    width: 35%;
+}
+.item-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.item-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.item-text h2 {
+    color: #FF136F;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+.item-text a {
+    text-align: center;
+    text-decoration: none;
+    padding: 13px 20px;
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.item-text a:hover {
+    color: white;
+    background: linear-gradient(180deg,#FF136F , #FF589B);
+}
+.carousel-control-prev {
+    width: 40px !important;
+    justify-content: flex-start !important;
+}
+.carousel-control-next {
+    width: 40px !important;
+    justify-content: flex-end !important;
+}
+.inner {
+    padding: 2em 0;
+    justify-content: center;
+    align-items: center;
+}
+.catagories-container {
+    margin-bottom: 40px;
+    padding: 0 40px !important;
+}
+.catagories-container h1 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.catagories {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    padding: 24px 0px;
+    padding-top: 0;
+}
+.watch, .bag, .shoes {
+    background-color: red;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.watch {
+    background: linear-gradient(180deg, #FF9C35, #FFD019);
+}
+.bag {
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+}
+.shoes {
+    background: linear-gradient(180deg, #4289FF, #3F07F8);
+}
+.catagories img {
+    width: 30%;
+}
+.catagories h2 {
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+}
+
+main {
+    background-color: #F4F4F4;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+.shoes-container, .bags-container {
+    padding: 0 40px !important;
+    margin-bottom: 100px;
+}
+.shoes-text, .bags-text{
+    margin-bottom: 25px;
+}
+.shoes-text p,.bags-text p {
+    color: #FF9D00;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+.shoes-text h1, .bags-text h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.card {
+    border-radius: 20px !important;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px !important;
+    color: #1F1F1F;
+}
+.card-text {
+    text-align: center;
+    color: #4E4E4E;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.card-body h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card-body a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.card-body a:hover {
+    color: white;
+}
+
+.footer-container {
+    background-color: #FFF2F1;
+}
+footer {
+    background-color: white;
+    padding-top: 70px;
+}
+.stay-box {
+    padding: 150px 0;
+}
+.stay-box h2 {
+    font-size: 1.5rem;
+    font-weight: 650;
+    text-align: center;
+}
+.stay-box p {
+    color: #707070;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.stay-box input {
+    background-color: white;
+    border: white;
+    width: 20rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    text-align: left;
+    color: black;
+}
+.stay-box input::placeholder {
+    color: #CCCCCC;
+}
+.stay-box button {
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.credit {
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: dimgray;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .search {
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .links {
+        justify-content: center;
+    }
+    .navbar-brand {
+        margin-right: 0px !important;
+    }
+    .item-text {
+        width: 50%;
+    }
+    .item-text h1 {
+        font-size: 1.8rem;
+    }
+    .item-text p {
+        font-size: 0.8rem;
+    }
+    .item-text h2 {
+        font-size: 1.3rem;;
+    }
+    .item-text a {
+        font-size: 0.7rem;
+    }
+    .catagories h2 {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:767px) {
+    .inner {
+        flex-direction: column;
+    }
+    .item-text {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .item-img {
+        width: 60%;
+    }
+    .catagories {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .watch, .bag, .shoes {
+        margin-bottom: 15px;
+    }
+    .catagories img {
+        width: 15%;
+    }
+    .stay-box h1 {
+        font-size: 0.7rem;
+    }
+    .stay-box p {
+        font-size: 0.7rem;
+    }
+    .stay-box input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .email-form {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .credit {
+        font-size: 10px;
+    }
+    .stay-box h2 {
+        font-size: 1.3rem;
+    }
+    .stay-box p {
+        font-size: 0.7rem;
+    }
+    .stay-box button {
+        font-size: 12px;
+    }
+}
